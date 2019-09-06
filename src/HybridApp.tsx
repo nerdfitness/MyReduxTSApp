@@ -19,8 +19,9 @@ import {
 } from "react-native";
 
 import { Provider } from "react-redux";
-import store from "./lib/store";
+import store from "./lib/store/store";
 import Profile from "./screens/Profile";
+import ToDoScreen from "./screens/ToDoScreen";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
             <View>
               <Text>Dope</Text>
             </View>
+            <ToDoScreen />
             <Profile />
           </ScrollView>
         </SafeAreaView>

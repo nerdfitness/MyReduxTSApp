@@ -27,14 +27,7 @@ module.exports = {
     es6: true,
     "react-native/react-native": true
   },
-  settings: {
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-        moduleDirectory: ["node_modules", "/src"]
-      }
-    }
-  },
+
   rules: {
     //'no-param-reassign': 0,
     "linebreak-style": 0,
