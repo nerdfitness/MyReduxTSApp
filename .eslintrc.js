@@ -32,7 +32,7 @@ module.exports = {
     "import/resolver": {
       node: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
-        moduleDirectory: ["node_modules", "/app"]
+        moduleDirectory: ["node_modules", "/src"]
       }
     }
   },
@@ -48,6 +48,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "react/destructuring-assignment": 0,
     "no-underscore-dangle": 0,
+    "import/named": 2,
     "react-native/no-raw-text": [
       2,
       {
