@@ -19,7 +19,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "prettier/react",
     "prettier/@typescript-eslint",
-    "@react-native-community",
     "plugin:react-redux/recommended"
   ],
   env: {
