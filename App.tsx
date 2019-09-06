@@ -20,21 +20,26 @@ import {
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
+import { Provider } from "react-redux";
+import store from "./src/lib/store";
+
 const App = () => {
   return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}
-        >
-          <View style={styles.body}>
-            <Text>Dope</Text>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </Fragment>
+    <Provider store={store}>
+      <Fragment>
+        <StatusBar barStyle="dark-content" />
+        <SafeAreaView>
+          <ScrollView
+            contentInsetAdjustmentBehavior="automatic"
+            style={styles.scrollView}
+          >
+            <View style={styles.body}>
+              <Text>Dope</Text>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </Fragment>
+    </Provider>
   );
 };
 
