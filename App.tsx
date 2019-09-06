@@ -22,6 +22,7 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 
 import { Provider } from "react-redux";
 import store from "./src/lib/store";
+import Profile from "./src/screens/Profile";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
             <View style={styles.body}>
               <Text>Dope</Text>
             </View>
+            <Profile />
           </ScrollView>
         </SafeAreaView>
       </Fragment>
