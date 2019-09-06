@@ -10,6 +10,7 @@ const Profile: React.FC<Props> = props => {
   return (
     <View>
       <Text>Hello!</Text>
+      <Text>This is the profile.</Text>
     </View>
   );
 };
